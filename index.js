@@ -54,5 +54,9 @@ module.exports = function (messagesByFile, context) {
             }
         })
 
-    return JSON.stringify(rules, null, 4)
+    console.log(`There were ${rules.length} rule failures in ${filesByMessage.size} files.\n`)
+    
+    console.log("Copy the following rule overrides into the overrides section of your ESLint config file to disable each rule failure:")
+
+    return JSON.stringify({ overrides: rules }, null, 4)
 }
