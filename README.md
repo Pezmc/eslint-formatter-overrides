@@ -6,9 +6,16 @@
 
 This formatter outputs a set of ESLint overrides that disable each rule for each file that it fails.
 
-This is useful when increasing lint requirements for an existing code base.
+This is useful when increasing lint requirements for an existing code base, or when introducing eslint for the first time.
 
-## How use
+## Best Practices
+
+- Add your new ESLint rules to, or set up ESLint in, an existing project
+- Run this plugin to generate a set of overrides so all lint checks pass
+- Add those overrides to your eslint config
+- Over time, aim to remove all overrides from the eslint file
+
+## How to use
 
 ### Install
 
