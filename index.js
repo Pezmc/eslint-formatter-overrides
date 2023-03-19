@@ -46,11 +46,11 @@ module.exports = function (messagesByFile, context) {
         .map(([messageId, files]) => {
             return {
                 rules: {
-                    [messageId]: 'off',
+                    [messageId]: 'off'
                 },
                 files: Array.from(files)
                     .sort()
-                    .map((file) => file.replace(context.cwd, '')),
+                    .map((file) => file.replace(new RegExp(`${context.cwd}/?`), ''))
             }
         })
 
