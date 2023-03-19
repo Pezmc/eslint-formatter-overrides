@@ -1,4 +1,4 @@
-# eslint-override-formatter
+# eslint-formatter-overrides
 
 > [ESLint](https://eslint.org) formatter that outputs rule overrides to disable any file with an existing failure. 
 
