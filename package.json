@@ -1,0 +1,16 @@
+{
+  "name": "eslint-override-formatter",
+  "version": "0.0.1",
+  "description": "Generates a set of overrides that disables ESLint for all existing failures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . -f ./index.js"
+  },
+  "keywords": [
+    "eslint",
+    "formatter",
+    "overrides"
+  ],
+  "author": "Pez Cuckow",
+  "license": "ISC"
+}
